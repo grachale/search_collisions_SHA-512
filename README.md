@@ -12,6 +12,9 @@ For example, if two leading zero bits are required, the corresponding byte would
 int findHash(int bits, char **message, char **hash)
 
 *bits: The desired number of zero bits in the hash.
+
 message: An output parameter containing data for which the corresponding hash was found. The result is stored as a dynamically allocated hexadecimal C string (terminated with \0).
+
 hash: An output parameter representing the hash of the message from the previous parameter. It is also a dynamically allocated hexadecimal C string.
+
 Return Value: The function returns 1 on success, 0 on failure or incorrect parameters (e.g., an invalid number of zero bits).
